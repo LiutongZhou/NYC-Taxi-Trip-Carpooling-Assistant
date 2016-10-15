@@ -10,7 +10,9 @@ Civil Infrastructure System Optimization Project for Mining NYC Taxi Data.
    
 ## Pattern Discovery Part
 ### Current Finding
-
+   
+   You can use the clean sample data. This sample include all clean records in yellow_taxi_trip_2016_06. Not all collumns are included (fare is not included in this sample). 
+   
    [Current findings here](https://github.com/LiutongZhou/CEOR4011_Final_Project/blob/master/HotSpot.pdf)  We find the hottest origin in NYC.
    
 ![alt text][hottest orgin]
