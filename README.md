@@ -15,4 +15,4 @@
    
 ![alt text][hottest orgin]
 
-[hottest orgin]: https://github.com/LiutongZhou/CEOR4011_Final_Project/blob/master/1.PNG "We find the hottest origin in NYC"
+[hottest orgin]: https://github.com/LiutongZhou/CEOR4011_Final_Project/blob/master/pics/Busiest_area.PNG "We find the hottest origin in NYC"
