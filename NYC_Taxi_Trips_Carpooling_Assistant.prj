@@ -1,0 +1,138 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="F:\Augustinus\Documents\MATLAB\NYC_Taxi_Trips_Carpooling_Assistant.prj" location="F:\Augustinus\Documents\MATLAB" name="NYC_Taxi_Trips_Carpooling_Assistant" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>NYC_Taxi_Trips_Carpooling_Assistant</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>2.0</param.version>
+    <param.authnamewatermark>Liutong Zhou</param.authnamewatermark>
+    <param.email>liutongchou@gmail.com</param.email>
+    <param.company />
+    <param.summary>Carpool Matching Solver</param.summary>
+    <param.description>&lt;b&gt;Miximize the total number of paired trips under several constraints&lt;/b&gt;
+
+Input: 
+&lt;ol&gt;&lt;li&gt;&lt;a href="http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml"&gt;Any NYC Taxi Trips .xlsx Data&lt;/a&gt; from the NYC Open Database &lt;/li&gt;
+&lt;li&gt;your prefered parameters for constraints&lt;/li&gt;&lt;/ol&gt;
+
+Output: the adjacency matrix (decision variables) 
+
+Feature: You can query the visualized results</param.description>
+    <param.screenshot>F:\Augustinus\Pictures\Saved Pictures\壁纸\壮观.jpg</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\NYC_Taxi_Trips_Carpooling_Assistant\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo>F:\Augustinus\Pictures\Saved Pictures\素材库\古典png图标\ppt宝藏_www.pptbz.com__012.png</param.logo>
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.company />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\optimize_matching.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\Add-Ons\Toolboxes\labelpoints\code\labelpoints.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\Construct_Model.m</file>
+      <file>${PROJECT_ROOT}\find_candidate.m</file>
+      <file>${PROJECT_ROOT}\greedysearch.m</file>
+      <file>${PROJECT_ROOT}\has_candidate.m</file>
+      <file>${PROJECT_ROOT}\plot_pairs.m</file>
+      <file>${PROJECT_ROOT}\retrieve_paired_trips.m</file>
+      <file>${PROJECT_ROOT}\Run_Model.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="splash.png" optional="false">F:\Augustinus\Documents\MATLAB\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="readme.txt" optional="true">F:\Augustinus\Documents\MATLAB\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="NYC_Taxi_Trips_Carpooling_Assistant.exe" optional="false">F:\Augustinus\Documents\MATLAB\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\NYC_Taxi_Trips_Carpooling_Assistant.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>P:\MATLAB\R2016b</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

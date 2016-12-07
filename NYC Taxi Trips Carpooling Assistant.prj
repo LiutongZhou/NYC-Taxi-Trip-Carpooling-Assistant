@@ -1,0 +1,97 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1504203135" file="F:\Augustinus\Documents\MATLAB\NYC Taxi Trips Carpooling Assistant.prj" location="F:\Augustinus\Documents\MATLAB" name="NYC Taxi Trips Carpooling Assistant" target="target.mlapps" target-name="应用程序打包">
+    <param.appname>NYC Taxi Trips Carpooling Assistant</param.appname>
+    <param.authnamewatermark>Liutong Zhou</param.authnamewatermark>
+    <param.email>liutongchou@gmail.com</param.email>
+    <param.company>Columbia University</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>Carpool Matching</param.summary>
+    <param.description>&lt;b&gt;Miximize the total number of paired trips under several constraints&lt;/b&gt;
+Input: 
+&lt;ol&gt;&lt;li&gt;&lt;a href="http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml"&gt;Any NYC Taxi Trips .xlsx Data&lt;/a&gt; from the NYC Open Database &lt;/li&gt;
+&lt;li&gt;your prefered parameters for constraints&lt;/li&gt;&lt;/ol&gt;
+Output: the adjacency matrix (decision variables) 
+Feature: You can query the visualized results</param.description>
+    <param.screenshot>F:\Augustinus\Pictures\Saved Pictures\素材库\古典png图标\ppt宝藏_www.pptbz.com__012.png</param.screenshot>
+    <param.version>2.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>F:\Augustinus\Documents\MATLAB</param.output>
+    <param.guid>cefd2826-3e4d-47a5-8896-0ef5f76d7527</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\optimize_matching.m</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\Add-Ons\Toolboxes\labelpoints\code\labelpoints.m</file>
+      <file>${PROJECT_ROOT}\Construct_Model.m</file>
+      <file>${PROJECT_ROOT}\find_candidate.m</file>
+      <file>${PROJECT_ROOT}\greedysearch.m</file>
+      <file>${PROJECT_ROOT}\has_candidate.m</file>
+      <file>${PROJECT_ROOT}\plot_pairs.m</file>
+      <file>${PROJECT_ROOT}\retrieve_paired_trips.m</file>
+      <file>${PROJECT_ROOT}\Run_Model.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="F:\Augustinus\Documents" name="MATLAB" optional="false">F:\Augustinus\Documents\MATLAB</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>P:\MATLAB\R2016b</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
