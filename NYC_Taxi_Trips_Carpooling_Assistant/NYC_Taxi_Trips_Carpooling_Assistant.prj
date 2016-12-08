@@ -1,9 +1,9 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="F:\Augustinus\Documents\MATLAB\NYC_Taxi_Trips_Carpooling_Assistant.prj" location="F:\Augustinus\Documents\MATLAB" name="NYC_Taxi_Trips_Carpooling_Assistant" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant\NYC_Taxi_Trips_Carpooling_Assistant.prj" location="F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant" name="NYC_Taxi_Trips_Carpooling_Assistant" preferred-package-location="F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant\NYC_Taxi_Trips_Carpooling_Assistant\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>NYC_Taxi_Trips_Carpooling_Assistant</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>2.0</param.version>
+    <param.version>2.1</param.version>
     <param.authnamewatermark>Liutong Zhou</param.authnamewatermark>
     <param.email>liutongchou@gmail.com</param.email>
     <param.company />
@@ -72,7 +72,7 @@ Feature: You can query the visualized results</param.description>
       <file>${PROJECT_ROOT}\optimize_matching.m</file>
     </fileset.main>
     <fileset.resources>
-      <file>${PROJECT_ROOT}\Add-Ons\Toolboxes\labelpoints\code\labelpoints.m</file>
+      <file>F:\Augustinus\Documents\MATLAB\Add-Ons\Toolboxes\labelpoints\code\labelpoints.m</file>
     </fileset.resources>
     <fileset.package />
     <fileset.depfun>
@@ -85,9 +85,9 @@ Feature: You can query the visualized results</param.description>
       <file>${PROJECT_ROOT}\Run_Model.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="splash.png" optional="false">F:\Augustinus\Documents\MATLAB\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="readme.txt" optional="true">F:\Augustinus\Documents\MATLAB\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="NYC_Taxi_Trips_Carpooling_Assistant.exe" optional="false">F:\Augustinus\Documents\MATLAB\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\NYC_Taxi_Trips_Carpooling_Assistant.exe</file>
+      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="NYC_Taxi_Trips_Carpooling_Assistant.exe" optional="false">F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\NYC_Taxi_Trips_Carpooling_Assistant.exe</file>
+      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="splash.png" optional="false">F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\NYC_Taxi_Trips_Carpooling_Assistant\for_testing" name="readme.txt" optional="true">F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant\NYC_Taxi_Trips_Carpooling_Assistant\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>

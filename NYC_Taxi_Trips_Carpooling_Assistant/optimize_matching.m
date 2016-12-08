@@ -1,9 +1,10 @@
-function optimize_matching()
+% optimize_matching
 %% An implementation of the simple carpool mathcing integer programming model
-% ver. 2.0
+% ver. 2.1
 % author Liutong Zhou
-% created on 12/5/2016
-% updated on 12/7/2016
+% created on 12/5/2016 v1.0
+% updated on 12/7/2016 v2.0
+% updated on 12/8/2016 v2.1
 %% Read taxi trip data
 if exist('tb' ,'var')~=1
     inp_dir='D:\OneDrive - Columbia University\2016Fall\3. Infrastructural Systems Optimization\Final Project\data\';
@@ -81,15 +82,14 @@ ind=find(G.Nodes.O_lon>-74 & G.Nodes.O_lon<-73.96);
 subG=subgraph(G,ind);
 figure;plot_pairs(subG);
 %% Rerieve the paired Trips
-while 1
-    answer=inputdlg({'For example: If you want to retrieve the 4th paired trip''s result input'},...
-        'Rerieve the paired Trips',1,{'4'},'on');
-    [i,status]=str2num(answer{:});
-    if i==0 
-        return
-    end
-    if status
+answer=inputdlg({'For example: If you want to retrieve the 3rd and 6th paired trip''s results, input'},...
+    'Rerieve the paired Trips',1,{'3,6'},'on');
+if ~isempty(answer)
+    n=str2num(answer{:});
+    for i=n
         retrieve_paired_trips(G,i);
     end
+    
 end
-end
+disp('Completed');
+pause

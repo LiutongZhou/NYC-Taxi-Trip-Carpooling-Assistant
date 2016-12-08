@@ -3,6 +3,8 @@ function tb=retrieve_paired_trips(G,i)
 figure
 ind=neighbors(G,i);
 tb=G.Nodes([i;ind],:);
+fprintf('No. %d paired trip\n',i);
+disp(tb);
 subG=subgraph(G,[i;ind]);
 g=plot_pairs(subG);
 g.MarkerSize=5;
@@ -16,6 +18,7 @@ Y=tb{:,{'O_lat','D_lat'}}';
 f=plot(X,Y,'.-','LineWidth',1,'MarkerSize',15);
 title(['the ',num2str(i),'th paired trips'],'FontSize',15);
 xlabel('Longitude','FontSize',15);ylabel('Latitude','FontSize',15);
-labelpoints(X(2,:), Y(2,:), 'Destinations','adjust_axes' ,1);
+labelpoints(X(1,1), Y(1,1), 'Origin','adjust_axes' ,1);
+labelpoints(X(2,1), Y(2,1), 'Destination','adjust_axes' ,1);
 grid on
 end
