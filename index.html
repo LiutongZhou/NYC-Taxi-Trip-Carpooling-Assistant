@@ -26,16 +26,20 @@
 
 <p style="color:black">But! They don't know each other... They ride two taxis seperately.. And they make the roads more congested by adding a taxi on the network...</p>
 
-<h1>
-<a id="carpool-or-not-carpool" class="anchor" href="#carpool-or-not-carpool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Carpool or Not Carpool?</h1>
+<h2>
+<a id="carpool-or-not-carpool" class="anchor" href="#carpool-or-not-carpool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Carpool or Not Carpool?</h2>
 
 <p style="color:black">But is it necessary for travelers/comuters in NYC to carpool? Does Carpooling help improve the traffic condition?
 The following is a person trip happened in the first week of June 2015.</p>
 
 <p><iframe src="https://liutongzhou.carto.com/viz/4ac75fd4-91cc-11e6-b987-0e3ebc282e83/embed_map" width="100%" height="520" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></p>
 
-<h1>
-<a id="where-to-start-with" class="anchor" href="#where-to-start-with" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Where to Start with?</h1>
+
+      <h1>
+<a id="how-to-carpool" class="anchor" href="#how-to-carpool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Carpool?</h1>
+      
+      <h2>
+<a id="where-to-start-with" class="anchor" href="#where-to-start-with" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Where to Start with?</h2>
 
 <p style="color:black">We analized the June 2016 <a href="http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml">NYC Taxi Trip Records</a> and find out:</p>
 
@@ -48,18 +52,24 @@ The following is a person trip happened in the first week of June 2015.</p>
 
       <p><img src="https://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/Visualization%20Results/Contour.png" align="middle" width="75%" height="75%" alt="Hot Areas" title="Hot Areas"></p>
       
-<p style="color:black">So we choose this region for our test:</p>
+<p style="color:black">So we choose this region for our test: 
+  
+  region range (40.74,-74) cross (40.77,-73.96), 
+  
+  time range: A busy morning on May 1 2015  </p>
+      
 
 <p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d40664.391421040484!2d-73.9883519753519!3d40.75324876512131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m4!2s40.74%2C-74!3m2!1d40.739999999999995!2d-74!4m4!2s40.77%2C-73.96!3m2!1d40.769999999999996!2d-73.96!5e0!3m2!1sen!2sus!4v1479164439526" width="800" height="400" allowfullscreen="allowfullscreen"></iframe></p>
 
-<h1>
-<a id="how-to-maximize-the-total-number-of-carpooled-trips" class="anchor" href="#how-to-maximize-the-total-number-of-carpooled-trips" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Maximize the Total number of Carpooled trips</h1>
+<h2>
+<a id="how-to-maximize-the-total-number-of-carpooled-trips" class="anchor" href="#how-to-maximize-the-total-number-of-carpooled-trips" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Maximize the Total number of Carpooled trips</h2>
 
-<p style="color:black">An integer programming model
-PDF insertion here </p>
+<p style="color:black">An integer programming model:</p>
+      
+      <p><iframe src="http://docs.google.com/gview?url=http://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/NYC_Taxi_Trips_Carpooling_Assistant/Model-carpool-matching-problem.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe></p>
 
-<h1>
-<a id="how-to-solve-the-model" class="anchor" href="#how-to-solve-the-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Solve the Model</h1>
+<h2>
+<a id="how-to-solve-the-model" class="anchor" href="#how-to-solve-the-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Solve the Model</h2>
 
 <p style="color:black">We have created an NYC Taxi Trip Carpooling Assitant using Matlab, which can be downloaded from <a href="https://github.com/LiutongZhou/NYC-Taxi-Trip-Carpooling-Assistant/releases/tag/1.0">here</a>. </p>
 
@@ -67,7 +77,7 @@ PDF insertion here </p>
 
 <p style="color:black">We used May 1 2016 records as the input data for this App. And the results are shown below:</p>
 
-<p><img src="https://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/Visualization%20Results/Paired%20Taxi%20Trips%20Busiest%20Region.png" alt="Paired Trips" height="120%", title="Paired Trips"></p>
+<p><img src="https://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/Visualization%20Results/Paired%20Taxi%20Trips%20Busiest%20Region.png" alt="Paired Trips" height="110%", title="Paired Trips"></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/LiutongZhou/NYC-Taxi-Trip-Carpooling-Assistant">NYC Taxi Trip Carpooling</a> is maintained by <a href="https://github.com/LiutongZhou">LiutongZhou</a>.</span>
