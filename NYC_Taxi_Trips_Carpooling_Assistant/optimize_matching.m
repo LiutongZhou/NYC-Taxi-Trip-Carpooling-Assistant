@@ -1,4 +1,4 @@
-% optimize_matching
+optimize_matching
 %% An implementation of the simple carpool mathcing integer programming model
 % ver. 2.1
 % author Liutong Zhou

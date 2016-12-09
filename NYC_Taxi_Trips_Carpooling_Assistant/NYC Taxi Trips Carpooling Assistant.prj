@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1504203135" file="F:\Augustinus\Documents\MATLAB\NYC Taxi Trips Carpooling Assistant.prj" location="F:\Augustinus\Documents\MATLAB" name="NYC Taxi Trips Carpooling Assistant" target="target.mlapps" target-name="应用程序打包">
+  <configuration build-checksum="513326920" file="F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant\NYC Taxi Trips Carpooling Assistant.prj" location="F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant" name="NYC Taxi Trips Carpooling Assistant" target="target.mlapps" target-name="应用程序打包">
     <param.appname>NYC Taxi Trips Carpooling Assistant</param.appname>
     <param.authnamewatermark>Liutong Zhou</param.authnamewatermark>
     <param.email>liutongchou@gmail.com</param.email>
@@ -14,12 +14,12 @@ Input:
 Output: the adjacency matrix (decision variables) 
 Feature: You can query the visualized results</param.description>
     <param.screenshot>F:\Augustinus\Pictures\Saved Pictures\素材库\古典png图标\ppt宝藏_www.pptbz.com__012.png</param.screenshot>
-    <param.version>2.0</param.version>
+    <param.version>2.1</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
-    <param.output>F:\Augustinus\Documents\MATLAB</param.output>
+    <param.output>F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant</param.output>
     <param.guid>cefd2826-3e4d-47a5-8896-0ef5f76d7527</param.guid>
     <unset>
       <param.icon />
@@ -34,7 +34,6 @@ Feature: You can query the visualized results</param.description>
       <file>${PROJECT_ROOT}\optimize_matching.m</file>
     </fileset.main>
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\Add-Ons\Toolboxes\labelpoints\code\labelpoints.m</file>
       <file>${PROJECT_ROOT}\Construct_Model.m</file>
       <file>${PROJECT_ROOT}\find_candidate.m</file>
       <file>${PROJECT_ROOT}\greedysearch.m</file>
@@ -42,11 +41,12 @@ Feature: You can query the visualized results</param.description>
       <file>${PROJECT_ROOT}\plot_pairs.m</file>
       <file>${PROJECT_ROOT}\retrieve_paired_trips.m</file>
       <file>${PROJECT_ROOT}\Run_Model.m</file>
+      <file>F:\Augustinus\Documents\MATLAB\Add-Ons\Toolboxes\labelpoints\code\labelpoints.m</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />
     <build-deliverables>
-      <file location="F:\Augustinus\Documents" name="MATLAB" optional="false">F:\Augustinus\Documents\MATLAB</file>
+      <file location="F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant" name="NYC_Taxi_Trips_Carpooling_Assistant" optional="false">F:\Augustinus\Documents\GitHub\NYC-Taxi-Trip-Carpooling-Assistant\NYC_Taxi_Trips_Carpooling_Assistant</file>
     </build-deliverables>
     <workflow />
     <matlab>
